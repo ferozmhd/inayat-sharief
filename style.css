@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Nunito:wght@400;600;700;800;900&display=swap');
+
+body{
+    font-family: Nunito, Lato , Josefin ,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana;
+}
+/* generic classes */
+.main-header{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Josefin;
+}
+.section-header{
+    font-size: 45px;
+    font-weight: 800;
+}
+.description{
+    color: #57586f;
+}
+.sub-header{
+    font-size: 25px;
+    font-weight: 500;
+}   
+.primary-color{
+    color: #22243a;
+}
+.secondary-color{
+    color: #101032;
+}
+/* header */
+.header{
+    background-color: #dbe3e9;
+}
+.navbar{
+    top: 20px;
+    background-color: #ffffff !important;
+    border-radius: 10px;
+}
+.title{
+    padding-top: 120px;
+    padding-left: 120px;
+}
+/* skills */
+.skill-list{
+    list-style: none;
+}
+.skill-list>li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.skill-list>li:active,.skill-list>li:focus {
+    background-color: #2b52d9;
+    color: #ffffff !important; 
+}
+.tab-content{
+    display: none;
+}
+.tab-content.current{
+    display: inherit;
+}
+.active{
+    display: block;
+    background-color: #2b52d9 !important;
+    color: #ffffff !important; 
+}
+ul.tabs li{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.skill-list-img{
+    width: 100%;
+}
+hr{
+    margin: 0px !important;
+    border-top: 1.5px solid grey !important;
+}
+.owl-item{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+@media only screen and (max-width:768px){
+    .navbar{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main-header{
+        font-size: 45px;
+    }
+    .section-header{
+        font-size: 25px;
+    }
+    .title{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+}
+
+
+/* owl */
+.carousel-wrap {
+margin: 90px auto;
+padding: 0 5%;
+width: 80%;
+position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+position: relative;
+z-index: 100; 
+}
+
+/* end fix */
+.owl-nav > button {
+margin-top: -26px;
+position: absolute;
+transform: translate(729px, -129px);
+color: #cdcbcd;
+}
+
+.owl-nav i {
+font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+left: -30px;
+}
+.slider_nav{
+    position: absolute;
+}
